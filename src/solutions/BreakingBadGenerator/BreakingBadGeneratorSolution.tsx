@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import './BreakingBadGenerator.css';
 import { PeriodicString } from "./components";
 import { periodify } from "./utils";
-import {periodicElements} from "../../constants";
 
 const BreakingBadGeneratorSolution: React.FC = () => {
     const [firstLine, setFirstLine] = useState('');
@@ -27,7 +26,7 @@ const BreakingBadGeneratorSolution: React.FC = () => {
 
             <div className="row">
                 <div className="col form-item">
-                    <label htmlFor="firstLine">First Line {periodicElements.length}</label>
+                    <label htmlFor="firstLine">First Line</label>
                     <input id="firstLine" onChange={e => setFirstLine(e.target.value)} value={firstLine}/>
                 </div>
 
@@ -37,12 +36,24 @@ const BreakingBadGeneratorSolution: React.FC = () => {
                 </div>
             </div>
 
-            <div>
+            <div className="Generator-examples">
                 <button onClick={() => {
                     setFirstLine('Breaking')
                     setLastLine('Bad')
                 }
                 }>Example 1</button>
+
+                <button onClick={() => {
+                    setFirstLine('How I met your')
+                    setLastLine('Dog')
+                }
+                }>Example 2</button>
+
+                <button onClick={() => {
+                    setFirstLine('____Br____')
+                    setLastLine('____b')
+                }
+                }>Example 3</button>
             </div>
         </div>
     )

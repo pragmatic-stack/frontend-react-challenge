@@ -5,3 +5,10 @@
 .Generator-logo {
     margin-bottom: 48px;
 }
+
+.Generator-examples {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 0
+}
