@@ -3,7 +3,9 @@
 ![Drag Racing](public/img/breaking_bad_example.png)
 
 ## Given
-- An array of periodic element strings e.g. ['Br', 'B', ...]
+- An array of periodic element strings that
+  - contains strings with 2 chars like `Br`
+  - contains strings with 1 char like `B`
 - A component with 2 input fields and basic markup.
 
 ##  Challenge

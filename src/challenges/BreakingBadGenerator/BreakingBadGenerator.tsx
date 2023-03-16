@@ -1,4 +1,5 @@
 import React from "react";
+import { periodicElements } from "../../constants";
 import './BreakingBadGenerator.css';
 
 const BreakingBadGenerator: React.FC = () => {
