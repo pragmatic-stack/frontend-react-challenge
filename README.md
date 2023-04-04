@@ -2,13 +2,19 @@
 
 ![Drag Racing](public/img/breaking_bad_example.png)
 
-## Given
+## Setup
+- The project is setup with cra, typescript and jest, install dependencies with `npm i`.
+- The app renders the challenge component on the root route `/`.
+- The app renders an implementation example on `/goal` route.
+
+##  Challenge
+
+### Given
 - A constant array of periodic element strings that
   - contains strings with 2 chars like `Br`
   - contains strings with 1 char like `B`
-- A component with 2 input fields and basic markup.
+- A component with 2 input fields and basic markup located in `src/challenges/BreakingBadGenerator.tsx`.
 
-##  Challenge
 Extend the given component to match the following acceptance criteria.
 
 ### 1. Input Handling
@@ -31,16 +37,9 @@ Implement a function that processes the input values. Think about a good data st
 - The component should highlight the first found periodic element for each logo line.
 - Appropriate styling to the logo is applied to make it visually appealing.
 
-The component to extend is located in `src/challenges/BreakingBadGenerator.tsx`.
-
 ## Hints
 
 ### Best way to walk through this challenge is to:
 1. Implement basic input handling
 2. Implement value preparation for periodic occurrences
 3. Implement rendering of the logo and styling
-
-### Preparation
-- The project is setup with cra, typescript and jest, install dependencies with `npm i`.
-- The app renders your component on the root route `/`.
-- The app renders an implementation example on `/goal` route.
