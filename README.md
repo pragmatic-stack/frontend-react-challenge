@@ -18,6 +18,8 @@ Extend the given component to match the following acceptance criteria.
 - The component should pass the input values to a function for further processing.
 
 ### 2. Identify Periodic Element Occurrences
+Implement a function that processes the input values. Think about a good structure to prepare the values for rendering.
+
 - When the function receives a string, it should identify the **first occurrence** of a periodic element.
 - If a periodic element with **two chars** is present in the string, it should take priority over any periodic element with one character.
 - If no two-char periodic element is present in the string, the function should use the first occurrence of a **one-char** periodic element.
